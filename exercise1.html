@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Онго солидог дөрвөлжин</title>
+<style>
+/* Дэвсгэр */
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: white;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.rectangle {
+width: 400px;
+height: 400px;
+background-color: red;
+}
+.red-rectangle {
+width: 300px;
+height: 300px;
+background-color: red;
+}
+
+.blue-rectangle {
+width: 300px;
+height: 300px;
+background-color: blue;
+}
+
+@media (max-width: 800px) {
+body {
+background-color: green;
+}
+}
+
+@media (min-width: 500px) {
+.red-rectangle {
+background-color: blue;
+}
+.blue-rectangle {
+background-color: red;
+}
+}
+</style>
+</head>
+<body>
+<div class="rectangle"></div>
+<div class="red-rectangle"></div>
+<div class="blue-rectangle"></div>
+</body>
+</html>
