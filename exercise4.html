@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flex Squares</title>
+<style>
+.container {
+display: flex;
+gap: 10px;
+}
+
+.square {
+width: 100px;
+height: 100px;
+background-color: red;
+}
+
+@media (max-width: 600px) {
+.container {
+flex-direction: column;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+</div>
+</body>
+</html>
